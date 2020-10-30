@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Js - Part 1 - Exo 1</title>
+</head>
+<body>
+    <p>Cliquer le bouton pour remplir le formulaire: </p>
+
+    <form>
+        <input type="button" value="Remplir le formulaire" onclick="showModal();">
+    </form>
+
+    <dialog id="userModal">
+        <form>
+            <p>Informations</p>
+            <p>Votre Nom:<input type="text" id="name" name="name" minlength="4" maxlength="8" size="10" required></p>
+            <p>Votre Age:<input type="number" id="age" min="1" max="100" required></p>
+            <p>Votre Ville:<input type="text" id="city" name="city" minlength="4" maxlength="8" size="10" required></p>
+            <input type="submit" value="Valider" onclick="collectData();">
+        </form>
+    </dialog>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
